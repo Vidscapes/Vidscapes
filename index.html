@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Usman Khan — Video Editor</title>
+  <meta name="description" content="Usman Khan — Cinematic & Documentary Video Editor" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+  <div class="bg-wrap"><div class="animated-bg"></div></div>
+  <div class="noise"></div>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">UK</div>
+        <div>
+          <h1>Usman Khan</h1>
+          <p class="muted">Cinematic & Documentary Video Editor</p>
+        </div>
+      </div>
+      <nav class="nav-links">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link" href="cinematic.html">Cinematic</a>
+        <a class="nav-link" href="documentary.html">Documentary</a>
+        <a class="nav-link" href="commercial.html">Commercial</a>
+        <a class="nav-link" href="shorts.html">Shorts</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="intro">
+          <h2>Hi, I'm <span style="background:linear-gradient(90deg,var(--accent1),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent;font-weight:800">Usman Khan</span>.</h2>
+          <p>I create cinematic documentaries and narrative edits — color-grading, sound design, and pacing that tells a story. I work with filmmakers and brands to shape raw footage into emotional experiences.</p>
+          <p class="muted">Select a category below to view examples.</p>
+
+          <div class="search-row">
+            <div class="search compact" id="search">
+              <div class="icon" title="Search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+              </div>
+              <input placeholder="Search cinematic documentary..." aria-label="Search" />
+            </div>
+            <div class="muted">Try searching "color grade" or "shorts"</div>
+          </div>
+
+          <div class="grid" role="list" aria-label="Portfolio categories" style="margin-top:22px">
+            <div class="card" role="listitem" tabindex="0" data-target="cinematic.html">
+              <div class="thumb" style="background-image:url('assets/images/cinematic-1.svg')"></div>
+              <div>
+                <div class="label">Cinematic</div>
+                <div class="sub">Slow-burn, graded films</div>
+              </div>
+            </div>
+
+            <div class="card" role="listitem" tabindex="0" data-target="documentary.html">
+              <div class="thumb" style="background-image:url('assets/images/documentary-1.svg')"></div>
+              <div>
+                <div class="label">Documentary</div>
+                <div class="sub">Real stories, honest edits</div>
+              </div>
+            </div>
+
+            <div class="card" role="listitem" tabindex="0" data-target="commercial.html">
+              <div class="thumb" style="background-image:url('assets/images/commercial-1.svg')"></div>
+              <div>
+                <div class="label">Commercial</div>
+                <div class="sub">Brand films & promos</div>
+              </div>
+            </div>
+
+            <div class="card" role="listitem" tabindex="0" data-target="shorts.html">
+              <div class="thumb" style="background-image:url('assets/images/shorts-1.svg')"></div>
+              <div>
+                <div class="label">Shorts</div>
+                <div class="sub">Fast-paced social cuts</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <aside>
+          <div style="width:420px;border-radius:14px;overflow:hidden;background:var(--panel);padding:0">
+            <div style="width:100%;height:240px;background-image:url('assets/images/hero-thumb.svg');background-size:cover;background-position:center"></div>
+            <div style="padding:14px">
+              <strong>Cinematic Reel (placeholder)</strong>
+              <p class="muted" style="margin-top:8px;font-size:13px">Drop your reel into <kbd>assets/videos/hero.mp4</kbd> and update the video tag in index.html if you want autoplay preview.</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <footer>© <strong>Usman Khan</strong> — Video Editing Portfolio • Hosted on GitHub Pages</footer>
+  </div>
+
+  <div class="cursor" id="cursor"><div class="dot"></div></div>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
